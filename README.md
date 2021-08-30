@@ -31,5 +31,5 @@ In progress...
 
 ## Author
 
-- Website - [Zineb Boutaa](https://zineb-bou.github.io/Protfolio/)
+- Website - [Zineb Boutaa](https://zineb-bou.github.io/)
 - Twitter - [@ZBoutaa](https://twitter.com/ZBoutaa)
