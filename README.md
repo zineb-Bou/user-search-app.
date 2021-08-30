@@ -32,5 +32,4 @@ In progress...
 ## Author
 
 - Website - [Zineb Boutaa](https://zineb-bou.github.io/Protfolio/)
-- Frontend Mentor - [@zineb-Bou](https://www.frontendmentor.io/profile/zineb-Bou)
 - Twitter - [@ZBoutaa](https://twitter.com/ZBoutaa)
