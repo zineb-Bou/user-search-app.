@@ -8,9 +8,44 @@ body {
   background-color: var(--White);
 }
 
+.heading h1 {
+  font-weight: var(--Very_Dark_Blue);
+}
+.heading .toggle_switch_btn {
+  color: var(--Dark_Grayish_Blue);
+  fill: var(--Dark_Grayish_Blue);
+}
 .main {
   background-color: var(--White);
 }
 .user-data .profile-data {
   background-color: var(--Very_Pale_Blue);
+}
+
+.nav .input {
+  color: var(--Very_Dark_Blue);
+}
+.nav .input::placeholder {
+  color: var(--Dark_Grayish_Blue);
+}
+
+.user-name-join-date h2 {
+  color: var(--Very_Dark_Blue);
+}
+.user-name-join-date p {
+  color: var(--Dark_Grayish_Blue);
+}
+.user-description p {
+  color: var(--Dark_Grayish_Blue);
+}
+.profile-data .column .tag {
+  color: var(--Dark_Grayish_Blue);
+}
+.profile-data .column .number {
+  color: var(--Very_Dark_Blue);
+}
+
+.social-contact > div {
+  color: var(--Dark_Grayish_Blue);
+  fill: var(--Dark_Grayish_Blue);
 }
