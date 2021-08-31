@@ -9,6 +9,7 @@ Thanks you for checking my solution.
 ## Table of contents
 
 - [The challenge](#the-challenge)
+- [live-site](#Live-site)
 - [Update record](#Update-record)
 - [Author](#author)
 
@@ -24,6 +25,11 @@ The users should be able to:
 - See relevant user information based on their search
 - Switch between light and dark themes
 - Have the correct color scheme chosen for them based on their computer preferences.
+
+
+## Live-site
+
+[Live site URL](https://zineb-bou.github.io/GitHub-user-search-app./)
 
 ## Update-record
 
