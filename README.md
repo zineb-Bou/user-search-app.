@@ -29,7 +29,7 @@ The users should be able to:
 
 ## Live-site
 
-[Live site URL](https://zineb-bou.github.io/GitHub-user-search-app./)
+[Live site URL](https://zineb-bou.github.io/user-search-app./)
 
 ## Update-record
 
