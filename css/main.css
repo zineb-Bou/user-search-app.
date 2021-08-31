@@ -8,6 +8,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+body.active {
+  transition: color 100ms ease-out, background-color 1ms ease-out;
+}
 
 h1,
 h2,
@@ -42,11 +45,16 @@ p {
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: var(--font-weight-bold);
-  display: grid;
+}
+.toggle_switch_btn .icon {
+  position: relative;
 }
 #sun {
-  grid-column-start: 1;
-  grid-row-start: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   visibility: hidden;
 }
 #sun:focus {
@@ -55,19 +63,20 @@ p {
 #moon:focus {
   outline: none;
 }
-#moon {
-  grid-column-start: 1;
-  grid-row-start: 1;
-}
+
 .toggle_switch_btn #input_switch {
   display: none;
 }
-#input_switch:checked ~ #sun {
+#input_switch:checked + .icon #sun {
   visibility: visible;
+  transition: opacity 1000ms 250ms cubic-bezier(0, 0, 0.2, 1),
+    transform 1000ms 250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-#input_switch:checked ~ #moon {
+#input_switch:checked + .icon #moon {
   visibility: hidden;
+  transition: opacity 1000ms 250ms cubic-bezier(0, 0, 0.2, 1),
+    transform 1000ms 250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 /* Style the search bar  */
