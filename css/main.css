@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-@import 'Light_theme.css';
 
 body {
   margin: 0;
@@ -43,24 +42,34 @@ p {
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: var(--font-weight-bold);
-  display: flex;
-  align-items: center;
+  display: grid;
 }
-.toggle_switch_btn .icon {
-  margin-left: 8px;
-  position: relative;
-}
-.icon #sun {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+#sun {
+  grid-column-start: 1;
+  grid-row-start: 1;
   visibility: hidden;
 }
-.toggle_switch_btn input {
+#sun:focus {
+  outline: none;
+}
+#moon:focus {
+  outline: none;
+}
+#moon {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.toggle_switch_btn #input_switch {
   display: none;
 }
+#input_switch:checked ~ #sun {
+  visibility: visible;
+}
+
+#input_switch:checked ~ #moon {
+  visibility: hidden;
+}
+
 /* Style the search bar  */
 
 .header .nav {
