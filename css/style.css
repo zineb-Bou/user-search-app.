@@ -1,6 +1,9 @@
 :root {
   /* color  palette */
+  /* Primary */
 
+  --Lime_Green: hsl(163, 72%, 41%);
+  --Bright_Red: hsl(0, 91%, 62%);
   /* Light Theme */
   /* (BG ) */
   --Very_Pale_Blue: hsl(227, 100%, 98%);
