@@ -1,0 +1,59 @@
+@import 'style.css';
+
+body {
+  background-color: var(--Very_Dark_Blue_001);
+}
+
+.header .nav {
+  background-color: var(--Very_Dark_Blue_002);
+}
+
+.heading h1 {
+  color: var(--White);
+}
+.heading .toggle_switch_btn {
+  color: var(--White);
+  fill: var(--White);
+}
+.heading .toggle_switch_btn:hover {
+  color: var(--Dark_Grayish_Blue);
+  fill: var(--Dark_Grayish_Blue);
+}
+.main {
+  background-color: var(--Very_Dark_Blue_002);
+}
+.user-data .profile-data {
+  background-color: var(--Very_Dark_Blue_001);
+}
+.nav .input {
+  color: var(--White);
+}
+.nav .input::placeholder {
+  color: var(--White);
+}
+
+.user-name-join-date h2 {
+  color: var(--White);
+}
+.user-name-join-date p {
+  color: var(--White);
+}
+.user-description p {
+  color: var(--White);
+}
+.profile-data .column .tag {
+  color: var(--White);
+}
+.profile-data .column .number {
+  color: var(--White);
+}
+
+.social-contact > div {
+  color: var(--White);
+  fill: var(--White);
+}
+
+.social-contact > div:hover {
+  color: var(--Dark_Grayish_Blue);
+  fill: var(--Dark_Grayish_Blue);
+}
