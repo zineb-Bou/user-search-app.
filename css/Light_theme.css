@@ -1,0 +1,16 @@
+@import 'style.css';
+
+body {
+  background-color: var(--Very_Pale_Blue);
+}
+
+.header .nav {
+  background-color: var(--White);
+}
+
+.main {
+  background-color: var(--White);
+}
+.user-data .profile-data {
+  background-color: var(--Very_Pale_Blue);
+}
