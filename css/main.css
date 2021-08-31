@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import 'Light_theme.css';
+
+body {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 24px;
+}
+.header .heading {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.heading h1 {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: var(--font-weight-bold);
+}
+
+/* style toggle switch button  */
+
+.heading .toggle_switch_btn {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: var(--font-weight-bold);
+  display: flex;
+  align-items: center;
+}
+.toggle_switch_btn .icon {
+  margin-left: 8px;
+  position: relative;
+}
+.icon #sun {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  visibility: hidden;
+}
+.toggle_switch_btn input {
+  display: none;
+}
+/* Style the search bar  */
+
+.header .nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  height: 69px;
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  margin-bottom: 18px;
+}
+.nav .search-icon {
+  margin: 0 24px;
+  fill: var(--Sky_Blue);
+}
+.nav .input {
+  border: none;
+  background-color: transparent;
+  width: 50%;
+  padding: 12px 0;
+  font-size: 18px;
+  line-height: 25px;
+}
+.nav .no-results-tag {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  color: var(--Bright_Red);
+  visibility: hidden;
+}
+.nav .input::placeholder {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: var(--font-weight-light);
+}
+.nav .input:focus {
+  outline: none;
+}
+.nav .search-btn {
+  position: absolute;
+  right: 0px;
+  margin-right: 24px;
+  border: none;
+  height: 50px;
+  width: 106px;
+  background-color: var(--Sky_Blue);
+  color: var(--White);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: var(--font-weight-light);
+  letter-spacing: 2px;
+}
+.nav .search-btn:hover {
+  opacity: 0.8;
+}
+.nav .search-btn:focus {
+  outline: none;
+}
+.main {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+}
+
+.profile-img {
+  flex: 1;
+  position: relative;
+  margin-top: 32px;
+  margin-left: 32px;
+}
+.profile-img img {
+  border-radius: 100%;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.user-data {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+  margin-right: 48px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.user-data .user-name-join-date {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.user-name-join-date h2 {
+  font-size: 22px;
+  line-height: 33px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.user-name-join-date h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: var(--font-weight-light);
+  grid-column: 1/2;
+  grid-row: 2/3;
+  color: var(--Sky_Blue);
+}
+.user-name-join-date p {
+  font-size: 15px;
+  line-height: 25px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: right;
+}
+
+.user-data .user-description {
+  margin-top: 20px;
+}
+.user-description p {
+  width: 100%;
+  font-size: 14px;
+  font-weight: var(--font-weight-light);
+  line-height: 25px;
+}
+
+.user-data .profile-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px 0;
+  margin: 32px 0;
+  border-radius: 15px;
+}
+.profile-data .column {
+  display: flex;
+  flex-direction: column;
+}
+.profile-data .column .tag {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: var(--font-weight-bold);
+}
+.profile-data .column .number {
+  font-size: 22px;
+  font-weight: var(--font-weight-bold);
+}
+
+.main .social-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-column-gap: 18px;
+  grid-row-gap: 8px;
+}
+.social-contact > div {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: var(--font-weight-light);
+}
