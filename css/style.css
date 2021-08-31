@@ -1,0 +1,35 @@
+:root {
+  /* color  palette */
+
+  /* Light Theme */
+  /* (BG ) */
+  --Very_Pale_Blue: hsl(227, 100%, 98%);
+  /* (Card BG) */
+  --White: hsl(0, 0%, 100%);
+  /* Text */
+  /* Icons & Buttons  */
+  --Sky_Blue: hsl(212, 100%, 50%);
+
+  --Light_Grayish_Blue: hsl(217, 35%, 45%);
+
+  --Dark_Grayish_Blue: hsl(217, 20%, 51%);
+
+  --Very_Dark_Blue: hsl(217, 21%, 21%);
+
+  /* Dark Theme */
+  /* (BG) */
+  --Very_Dark_Blue_001: hsl(220, 40%, 13%);
+  /* (Card BG ) */
+  --Very_Dark_Blue_002: hsl(222, 41%, 20%);
+  /* Text */
+  /* Icons & Buttons  */
+  --Sky_Blue: hsl(212, 100%, 50%);
+
+  --White: hsl(0, 0%, 100%);
+
+  /* Typograpphy  */
+
+  --font-weight-bold: 700;
+
+  --font-weight-light: 400;
+}
