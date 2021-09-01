@@ -298,3 +298,30 @@ p {
   }
 }
 
+/* Media queries for screens width < 700px */
+
+@media (max-width: 700px) {
+  .header {
+    width: 90vw;
+  }
+  .main {
+    width: 90vw;
+  }
+  .nav .input {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .nav .input::placeholder {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .nav .search-btn {
+    height: 46px;
+    width: 84px;
+    margin-right: 4px;
+    font-size: 14px;
+  }
+  .social-contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
