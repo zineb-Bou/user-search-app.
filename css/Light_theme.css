@@ -34,7 +34,7 @@ body {
 .main {
   background-color: var(--White);
 }
-/* Right side of the main section (user's info ) */
+
 /* First section  */
 .user-name-join-date h2 {
   color: var(--Very_Dark_Blue);
