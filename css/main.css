@@ -8,10 +8,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-body.active {
+/* Adding transitioin to body when switching between themes  */
+body.bg_transition {
   transition: color 100ms ease-out, background-color 1ms ease-out;
 }
 
+/* Making all text margin=0 & padding=0 (removing the default margin and padding ) */
 h1,
 h2,
 h3,
@@ -19,6 +21,8 @@ p {
   margin: 0;
   padding: 0;
 }
+
+/* style  header  */
 .header {
   display: flex;
   flex-direction: column;
@@ -67,6 +71,8 @@ p {
 .toggle_switch_btn #input_switch {
   display: none;
 }
+
+/* Add transition to toggle switch icons when transiting between themes  */
 #input_switch:checked + .icon #sun {
   visibility: visible;
   transition: opacity 1000ms 250ms cubic-bezier(0, 0, 0.2, 1),
@@ -117,6 +123,7 @@ p {
 .nav .input:focus {
   outline: none;
 }
+/* Style the search btn */
 .nav .search-btn {
   position: absolute;
   right: 0px;
@@ -137,6 +144,7 @@ p {
 .nav .search-btn:focus {
   outline: none;
 }
+/* Style the main section  */
 .main {
   width: 50%;
   display: flex;
@@ -144,6 +152,7 @@ p {
   border-radius: 15px;
 }
 
+/* Style the pofile image (main left section) */
 .profile-img {
   flex: 1;
   position: relative;
@@ -159,8 +168,8 @@ p {
   left: 50%;
   transform: translate(-50%);
 }
-
-.user-data {
+/* style user-data block (main right section) */
+.user-info {
   flex: 4;
   display: flex;
   flex-direction: column;
@@ -169,7 +178,9 @@ p {
   margin-top: 32px;
   margin-bottom: 32px;
 }
-.user-data .user-name-join-date {
+
+/* first section  */
+.user-name-join-date {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -196,7 +207,8 @@ p {
   text-align: right;
 }
 
-.user-data .user-description {
+/* second section */
+.user-description {
   margin-top: 20px;
 }
 .user-description p {
@@ -206,7 +218,8 @@ p {
   line-height: 25px;
 }
 
-.user-data .profile-data {
+/* thirs section */
+.profile-data {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -227,6 +240,8 @@ p {
   font-size: 22px;
   font-weight: var(--font-weight-bold);
 }
+
+/* Bottom section */
 
 .main .social-contact {
   display: grid;
