@@ -262,3 +262,39 @@ p {
   line-height: 25px;
   font-weight: var(--font-weight-light);
 }
+
+/* Media queries for screens width < 1100px */
+
+@media (max-width: 1100px) {
+  .header {
+    width: 60vw;
+  }
+  .main {
+    width: 60vw;
+  }
+
+  .profile-img {
+    grid-row: 1/2;
+  }
+  .user-name-join-date {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .user-name-join-date h3 {
+    grid-row: 2/3;
+  }
+  .user-name-join-date p {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: left;
+  }
+  .user-description {
+    grid-column: 1/3;
+  }
+  .profile-data {
+    grid-column: 1/3;
+  }
+  .social-contact {
+    grid-column: 1/3;
+  }
+}
+
