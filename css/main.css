@@ -155,10 +155,13 @@ p {
 
 /* Style the pofile image (main left section) */
 .profile-img {
-  flex: 1;
-  position: relative;
   margin-top: 32px;
   margin-left: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  grid-column: 1/2;
+  grid-row: 1/5;
 }
 .profile-img img {
   border-radius: 100%;
@@ -171,6 +174,11 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-right: 32px;
+  margin-top: 32px;
+  margin-left: 32px;
 }
 .user-name-join-date h2 {
   font-size: 22px;
@@ -196,7 +204,10 @@ p {
 
 /* second section */
 .user-description {
-  margin-top: 20px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-right: 32px;
+  margin-left: 32px;
 }
 .user-description p {
   width: 100%;
@@ -205,14 +216,17 @@ p {
   line-height: 25px;
 }
 
-/* thirs section */
+/* third section */
 .profile-data {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 15px 0;
-  margin: 32px 0;
   border-radius: 15px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-right: 32px;
+  margin-left: 32px;
 }
 .profile-data .column {
   display: flex;
@@ -230,12 +244,17 @@ p {
 
 /* Bottom section */
 
-.main .social-contact {
+.social-contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   grid-column-gap: 18px;
   grid-row-gap: 8px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  margin-left: 32px;
 }
 .social-contact > div {
   cursor: pointer;
