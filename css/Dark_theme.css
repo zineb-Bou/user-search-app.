@@ -1,9 +1,11 @@
 @import 'style.css';
 
+/* Add the dark theme colors   */
+
 body {
   background-color: var(--Very_Dark_Blue_001);
 }
-
+/* Header section */
 .header .nav {
   background-color: var(--Very_Dark_Blue_002);
 }
@@ -19,18 +21,19 @@ body {
   color: var(--Dark_Grayish_Blue);
   fill: var(--Dark_Grayish_Blue);
 }
-.main {
-  background-color: var(--Very_Dark_Blue_002);
-}
-.user-data .profile-data {
-  background-color: var(--Very_Dark_Blue_001);
-}
+/* Search bar  */
 .nav .input {
   color: var(--White);
 }
 .nav .input::placeholder {
   color: var(--White);
 }
+/* main section  */
+.main {
+  background-color: var(--Very_Dark_Blue_002);
+}
+/* Right side of the main section (user info)*/
+/* First section  */
 
 .user-name-join-date h2 {
   color: var(--White);
@@ -38,8 +41,14 @@ body {
 .user-name-join-date p {
   color: var(--White);
 }
+
+/* Second section */
 .user-description p {
   color: var(--White);
+}
+/* Third section */
+.profile-data {
+  background-color: var(--Very_Dark_Blue_001);
 }
 .profile-data .column .tag {
   color: var(--White);
@@ -48,6 +57,7 @@ body {
   color: var(--White);
 }
 
+/* Bottom section */
 .social-contact > div {
   color: var(--White);
   fill: var(--White);
