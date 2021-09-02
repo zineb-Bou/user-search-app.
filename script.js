@@ -49,3 +49,10 @@ let blog_url = document.querySelector('#blog-url');
 
 let company = document.querySelector('#company');
 
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  let search = document.getElementById('search-input').value;
+
+  //remove space from search input value
+  let originalName = search.split(' ').join('');
+
