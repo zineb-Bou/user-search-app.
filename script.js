@@ -56,3 +56,8 @@ form.addEventListener('submit', function (e) {
   //remove space from search input value
   let originalName = search.split(' ').join('');
 
+  // Fetching data from the Github user api
+
+  fetch('https://api.github.com/users/' + originalName)
+    .then((result) => result.json())
+    .then((data) => {
