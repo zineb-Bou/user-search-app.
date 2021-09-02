@@ -20,3 +20,32 @@ input.addEventListener('change', function () {
     document.body.classList.add('bg_transition');
   }
 });
+
+// variables for the user search
+
+const form = document.getElementById('myForm');
+
+let avatar = document.querySelector('#avatar');
+
+let name = document.querySelector('#name');
+
+let user_name = document.querySelector('#user-name');
+
+let join_date = document.querySelector('#join-date');
+
+let bio = document.querySelector('#bio');
+
+let nbr_repo = document.querySelector('#nbr-repo');
+
+let nbr_followers = document.querySelector('#nbr-followers');
+
+let nbr_following = document.querySelector('#nbr-following');
+
+let loc = document.querySelector('#loc');
+
+let twitter_user_name = document.querySelector('#twitter-user-name');
+
+let blog_url = document.querySelector('#blog-url');
+
+let company = document.querySelector('#company');
+
