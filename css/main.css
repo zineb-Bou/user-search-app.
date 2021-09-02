@@ -102,13 +102,16 @@ p {
   margin-right: 8px;
   fill: var(--Sky_Blue);
 }
-.nav .input {
+.nav #search-input {
   border: none;
   background-color: transparent;
   width: 50%;
   padding: 12px 0;
   font-size: 18px;
   line-height: 25px;
+}
+#search-input:focus {
+  outline: none;
 }
 .nav .no-results-tag {
   font-size: 14px;
