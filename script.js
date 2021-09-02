@@ -61,3 +61,14 @@ form.addEventListener('submit', function (e) {
   fetch('https://api.github.com/users/' + originalName)
     .then((result) => result.json())
     .then((data) => {
+      //fetch all the user data into data variable .
+      avatar.src = data.avatar_url;
+
+      //user full name
+
+      name.innerHTML = data.name;
+
+      //  user github account
+      user_name.innerHTML = `@${data.login}`;
+      user_name.href = `https://github.com/${data.login}`;
+
