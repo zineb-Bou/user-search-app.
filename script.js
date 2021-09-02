@@ -123,3 +123,13 @@ form.addEventListener('submit', function (e) {
     });
 });
 
+//Function to convert months from numbers into letters.
+
+function convert_month(nbr) {
+  let months = ["'01','Jan'", "'02','Feb'", "'03','Mar'"];
+  if (nbr == '03') {
+    for (let i = 0; i < months.length; i++) {
+      if (nbr == i) return months[i]['2'];
+    }
+  }
+}
