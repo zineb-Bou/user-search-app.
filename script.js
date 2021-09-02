@@ -72,3 +72,11 @@ form.addEventListener('submit', function (e) {
       user_name.innerHTML = `@${data.login}`;
       user_name.href = `https://github.com/${data.login}`;
 
+      // join date
+
+      let day_joining_github = data.created_at.slice(0, 10).split('-').join('');
+
+      let year = day_joining_github.slice(0, 4);
+      let month = convert_month(day_joining_github.slice(4, 6));
+      let day = day_joining_github.slice(6, 8);
+      join_date.innerHTML = `Joined ${year} ${month} ${day}`;
