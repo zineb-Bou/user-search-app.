@@ -80,3 +80,46 @@ form.addEventListener('submit', function (e) {
       let month = convert_month(day_joining_github.slice(4, 6));
       let day = day_joining_github.slice(6, 8);
       join_date.innerHTML = `Joined ${year} ${month} ${day}`;
+
+      // bio section
+
+      if (data.bio == null) {
+        bio.innerHTML = `Oooops !! ${data.name} didn't add a bio yet. `;
+      } else bio.innerHTML = data.bio;
+
+      // Profile data section
+
+      nbr_repo.innerHTML = data.public_repos;
+
+      nbr_followers.innerHTML = data.followers;
+
+      nbr_following.innerHTML = data.following;
+
+      // Social links section
+
+      loc.innerHTML = data.location;
+
+      if (data.twitter_username == null) {
+        twitter_user_name.innerHTML = 'Not aviable.';
+      } else {
+        twitter_user_name.innerHTML = data.twitter_username;
+        twitter_user_name.href = `https://twitter.com/${data.twitter_username}`;
+      }
+
+      // company working at
+      if (data.company == null) {
+        company.innerHTML = 'Not aviable.';
+      } else {
+        company.innerHTML = data.company;
+      }
+
+      // // website url
+      if (data.blog == '') {
+        blog_url.innerHTML = 'Not aviable.';
+      } else {
+        blog_url.innerHTML = data.blog;
+        blog_url.href = `${data.blog}`;
+      }
+    });
+});
+
