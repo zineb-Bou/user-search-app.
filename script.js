@@ -66,7 +66,11 @@ form.addEventListener('submit', function (e) {
 
       //user full name
 
-      name.innerHTML = data.name;
+      if (data.name == null) {
+        name.innerHTML = `I am anonymous 😕`;
+      } else {
+        name.innerHTML = data.name;
+      }
 
       //  user github account
       user_name.innerHTML = `@${data.login}`;
