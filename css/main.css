@@ -267,6 +267,13 @@ p {
   font-weight: var(--font-weight-light);
 }
 
+.social-contact .twitter {
+  align-self: end;
+}
+
+.social-contact div > a:hover {
+  text-decoration: none;
+}
 /* Media queries for screens width < 1100px */
 
 @media (max-width: 1100px) {
