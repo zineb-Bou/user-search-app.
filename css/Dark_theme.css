@@ -33,13 +33,12 @@ body {
 
 /* First section  */
 
-.user-name-join-date h2 {
+.user-name-join-date #name {
   color: var(--White);
 }
-.user-name-join-date p {
+.user-name-join-date #join-date {
   color: var(--White);
 }
-
 /* Second section */
 .user-description p {
   color: var(--White);
