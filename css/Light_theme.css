@@ -30,16 +30,15 @@ body {
 }
 
 /* First section  */
-.user-name-join-date h2 {
+.user-name-join-date #name {
   color: var(--Very_Dark_Blue);
 }
-.user-name-join-date p {
+.user-description #join-date {
   color: var(--Dark_Grayish_Blue);
 }
-.user-description p {
+.user-description #bio {
   color: var(--Dark_Grayish_Blue);
 }
-
 /* Third section  */
 .profile-data {
   background-color: var(--Very_Pale_Blue);
