@@ -78,9 +78,15 @@ form.addEventListener('submit', function (e) {
 
       // join date
 
-      let day_joining_github = data.created_at.slice(0, 10);
+      //Slice year
+      let year = data.created_at.slice(0, 4);
+      //Slice month convert number into letters.
+      let month = convert_month_to_letters(data.created_at.slice(5, 7));
+      //Slice the day
+      let day = data.created_at.slice(8, 10);
 
-      join_date.innerHTML = `Joined ${day_joining_github}`;
+      //concatenate year/ month / day, then disply the join date .
+      join_date.innerHTML = `Joined ${year} ${month} ${day}`;
 
       // bio section
 
@@ -126,7 +132,22 @@ form.addEventListener('submit', function (e) {
 
 //Function to convert months from numbers into letters.
 
-// function convert_month(nbr) {
-//   let months = ['Jan', 'Feb', 'Mar'];
-//   return months[nbr];
-// }
+function convert_month_to_letters(month) {
+  //convert month to number
+  let month_nbr = Number(month);
+  let months = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nev',
+    'Dec',
+  ];
+  return months[month_nbr - 1];
+}
