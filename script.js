@@ -110,7 +110,7 @@ form.addEventListener('submit', function (e) {
       // bio section
 
       if (data.bio == null) {
-        bio.innerHTML = `Oooops !! ${data.name} didn't add a bio yet. `;
+        bio.innerHTML = `Oooops !! I didn't add a bio yet. `;
       } else bio.innerHTML = data.bio;
 
       // Profile data section
