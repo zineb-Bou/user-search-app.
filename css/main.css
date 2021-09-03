@@ -103,11 +103,14 @@ p {
   fill: var(--Sky_Blue);
 }
 
-.nav .no-results-tag {
-  font-size: 14px;
+.no-results-tag {
+  font-size: 18px;
   font-weight: var(--font-weight-bold);
   color: var(--Bright_Red);
   visibility: hidden;
+}
+.no-results-tag.make_it_visible {
+  visibility: visible;
 }
 /* style the form input field  */
 #myForm #search-input {
@@ -156,7 +159,9 @@ p {
   grid-row-gap: 24px;
   border-radius: 15px;
 }
-
+.main.make_it_invisible {
+  visibility: hidden;
+}
 /* Style the pofile image (main left section) */
 .profile-img {
   margin-top: 32px;
