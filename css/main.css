@@ -102,31 +102,32 @@ p {
   margin-right: 8px;
   fill: var(--Sky_Blue);
 }
-.nav #search-input {
-  border: none;
-  background-color: transparent;
-  width: 50%;
-  padding: 12px 0;
-  font-size: 18px;
-  line-height: 25px;
-}
-#search-input:focus {
-  outline: none;
-}
+
 .nav .no-results-tag {
   font-size: 14px;
   font-weight: var(--font-weight-bold);
   color: var(--Bright_Red);
   visibility: hidden;
 }
-.nav .input::placeholder {
-  font-size: 18px;
+/* style the form input field  */
+#myForm #search-input {
+  background-color: transparent;
+  padding: 10px;
+  width: 50%;
+  border: none;
+  font-size: 20px;
   line-height: 25px;
   font-weight: var(--font-weight-light);
 }
-.nav .input:focus {
+
+#myForm #search-input:focus {
   outline: none;
 }
+/* Removing input background colour for Chrome autocomplete? */
+#myForm #search-input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+
 /* Style the search btn */
 .nav .search-btn {
   position: absolute;
