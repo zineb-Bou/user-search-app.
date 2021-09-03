@@ -33,7 +33,7 @@ body {
 .user-name-join-date #name {
   color: var(--Very_Dark_Blue);
 }
-.user-description #join-date {
+.user-name-join-date #join-date {
   color: var(--Dark_Grayish_Blue);
 }
 .user-description #bio {
