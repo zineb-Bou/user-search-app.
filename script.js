@@ -78,12 +78,9 @@ form.addEventListener('submit', function (e) {
 
       // join date
 
-      let day_joining_github = data.created_at.slice(0, 10).split('-').join('');
+      let day_joining_github = data.created_at.slice(0, 10);
 
-      let year = day_joining_github.slice(0, 4);
-      let month = convert_month(day_joining_github.slice(4, 6));
-      let day = day_joining_github.slice(6, 8);
-      join_date.innerHTML = `Joined ${year} ${month} ${day}`;
+      join_date.innerHTML = `Joined ${day_joining_github}`;
 
       // bio section
 
@@ -129,11 +126,7 @@ form.addEventListener('submit', function (e) {
 
 //Function to convert months from numbers into letters.
 
-function convert_month(nbr) {
-  let months = ["'01','Jan'", "'02','Feb'", "'03','Mar'"];
-  if (nbr == '03') {
-    for (let i = 0; i < months.length; i++) {
-      if (nbr == i) return months[i]['2'];
-    }
-  }
-}
+// function convert_month(nbr) {
+//   let months = ['Jan', 'Feb', 'Mar'];
+//   return months[nbr];
+// }
