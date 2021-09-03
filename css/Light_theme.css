@@ -16,10 +16,6 @@ body {
   color: var(--Dark_Grayish_Blue);
   fill: var(--Dark_Grayish_Blue);
 }
-.heading .toggle_switch_btn:hover {
-  color: var(--Very_Dark_Blue);
-  fill: var(--Very_Dark_Blue);
-}
 
 /* Search bar  */
 
