@@ -9,7 +9,7 @@ Thanks you for checking my solution.
 ## Table of contents
 
 - [The challenge](#the-challenge)
- - [Update record](#Update-record)
+ -[Update record](#Update-record)
 - [live-site](#Live-site)
 - [Author](#author)
 
@@ -32,7 +32,8 @@ The users should be able to:
 In progress...
 You can check my progress  on the link provided below,  😉
 
-##Live-site-URL
+## Live-site
+
 [Live site url](https://zineb-bou.github.io/user-search-app./)
 
 ## Author
