@@ -184,13 +184,13 @@ p {
   margin-top: 32px;
   margin-left: 32px;
 }
-.user-name-join-date h2 {
+.user-name-join-date #name {
   font-size: 22px;
   line-height: 33px;
   grid-column: 1/2;
   grid-row: 1/2;
 }
-.user-name-join-date h3 {
+.user-name-join-date #user-name {
   font-size: 16px;
   line-height: 24px;
   font-weight: var(--font-weight-light);
@@ -198,7 +198,7 @@ p {
   grid-row: 2/3;
   color: var(--Sky_Blue);
 }
-.user-name-join-date p {
+.user-name-join-date #join-date {
   font-size: 15px;
   line-height: 25px;
   grid-column: 2/3;
@@ -213,7 +213,7 @@ p {
   margin-right: 32px;
   margin-left: 32px;
 }
-.user-description p {
+.user-description #bio {
   width: 100%;
   font-size: 14px;
   font-weight: var(--font-weight-light);
@@ -290,10 +290,10 @@ p {
   .user-name-join-date {
     grid-template-columns: repeat(1, 1fr);
   }
-  .user-name-join-date h3 {
+  .user-name-join-date #user-name {
     grid-row: 2/3;
   }
-  .user-name-join-date p {
+  .user-name-join-date #join-date {
     grid-column: 1/2;
     grid-row: 3/4;
     text-align: left;
@@ -318,11 +318,11 @@ p {
   .main {
     width: 90vw;
   }
-  .nav .input {
+  .nav #search-input {
     font-size: 14px;
     line-height: 22px;
   }
-  .nav .input::placeholder {
+  .nav #search-input::placeholder {
     font-size: 14px;
     line-height: 22px;
   }
