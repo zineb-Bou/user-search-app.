@@ -19,10 +19,11 @@ body {
 }
 
 /* Search bar  */
-.nav .input {
+
+#myForm #search-input[type='text'] {
   color: var(--White);
 }
-.nav .input::placeholder {
+#myForm #search-input::placeholder {
   color: var(--White);
 }
 /* main section  */
