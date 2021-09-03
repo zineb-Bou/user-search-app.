@@ -27,9 +27,7 @@ The users should be able to:
 - Have the correct color scheme chosen for them based on their computer preferences.
 
 
-##Live-site
 
-[Live site URL](https://zineb-bou.github.io/user-search-app./)
 
 ## Update-record
 
