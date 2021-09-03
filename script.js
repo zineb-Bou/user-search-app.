@@ -49,17 +49,28 @@ let blog_url = document.querySelector('#blog-url');
 
 let company = document.querySelector('#company');
 
+//handle the event lisntener when submiting the search
 form.addEventListener('submit', function (e) {
   e.preventDefault();
+
   let search = document.getElementById('search-input').value;
 
   //remove space from search input value
   let originalName = search.split(' ').join('');
 
-  // Fetching data from the Github user api
+  // ...send the form data and get a response asynchronously
 
   fetch('https://api.github.com/users/' + originalName)
-    .then((result) => result.json())
+    .then((result) => {
+      if (result.ok) {
+        return result.json();
+      } else {
+        return Promise.reject({
+          status: result.status,
+          statusText: result.statusText,
+        });
+      }
+    })
     .then((data) => {
       //fetch all the user data into data variable .
       avatar.src = data.avatar_url;
@@ -127,7 +138,8 @@ form.addEventListener('submit', function (e) {
         blog_url.innerHTML = data.blog;
         blog_url.href = `${data.blog}`;
       }
-    });
+    })
+    .catch((err) => console.log('Error, with message:', err.statusText));
 });
 
 //Function to convert months from numbers into letters.
