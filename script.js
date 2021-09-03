@@ -25,6 +25,8 @@ input.addEventListener('change', function () {
 
 const form = document.getElementById('myForm');
 
+const main = document.querySelector('.main');
+
 let avatar = document.querySelector('#avatar');
 
 let name = document.querySelector('#name');
@@ -48,6 +50,8 @@ let twitter_user_name = document.querySelector('#twitter-user-name');
 let blog_url = document.querySelector('#blog-url');
 
 let company = document.querySelector('#company');
+
+let no_results = document.querySelector('.no-results-tag');
 
 //handle the event lisntener when submiting the search
 form.addEventListener('submit', function (e) {
