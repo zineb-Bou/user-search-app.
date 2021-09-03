@@ -18,14 +18,12 @@ body {
 }
 
 /* Search bar  */
-
-.nav .input {
-  color: var(--Very_Dark_Blue);
-}
-.nav .input::placeholder {
+#myForm #search-input[type='text'] {
   color: var(--Dark_Grayish_Blue);
 }
-
+#myForm #search-input::placeholder {
+  color: var(--Dark_Grayish_Blue);
+}
 /* main section  */
 .main {
   background-color: var(--White);
