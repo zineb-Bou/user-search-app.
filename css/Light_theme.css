@@ -52,11 +52,15 @@ body {
 
 /* Bottom section */
 .social-contact > div {
-  color: var(--Dark_Grayish_Blue);
   fill: var(--Dark_Grayish_Blue);
+}
+.social-contact div > a {
+  color: var(--Dark_Grayish_Blue);
 }
 
 .social-contact > div:hover {
-  color: var(--Very_Dark_Blue);
   fill: var(--Very_Dark_Blue);
+}
+.social-contact div > a:hover {
+  color: var(--Very_Dark_Blue);
 }
