@@ -17,10 +17,7 @@ body {
   color: var(--White);
   fill: var(--White);
 }
-.heading .toggle_switch_btn:hover {
-  color: var(--Dark_Grayish_Blue);
-  fill: var(--Dark_Grayish_Blue);
-}
+
 /* Search bar  */
 .nav .input {
   color: var(--White);
