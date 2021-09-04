@@ -76,7 +76,6 @@ form.addEventListener('submit', function (e) {
       }
     })
     .then((data) => {
-      console.log(data);
       //remove the invisibility from main if the previous request was error
       main.classList.remove('make_it_invisible');
       //make the no_result tag invisible if the previous request was error
