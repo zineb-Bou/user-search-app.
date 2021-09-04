@@ -80,6 +80,8 @@ form.addEventListener('submit', function (e) {
       main.classList.remove('make_it_invisible');
       //make the no_result tag invisible if the previous request was error
       no_results.classList.remove('make_it_visible');
+      //make the input field red
+      myForm.classList.remove('error');
       //fetch all the user data into data variable .
       avatar.src = data.avatar_url;
 
@@ -183,4 +185,5 @@ function display_noResult() {
   console.log(no_results.innerHTML);
   no_results.classList.add('make_it_visible');
   main.classList.add('make_it_invisible');
+  myForm.classList.add('error');
 }
