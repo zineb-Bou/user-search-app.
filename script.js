@@ -128,7 +128,7 @@ form.addEventListener('submit', function (e) {
       if (data.location == '') {
         loc.innerHTML = 'Not aviable.';
       } else {
-      loc.innerHTML = data.location;
+        loc.innerHTML = data.location;
       }
       //twitter link
       if (data.twitter_username == null) {
@@ -145,11 +145,11 @@ form.addEventListener('submit', function (e) {
         company.innerHTML = data.company;
       }
 
-      // // website url
+      // website url (slice the link display only 10 char for UI purpore) 
       if (data.blog == '') {
         blog_url.innerHTML = 'Not aviable.';
       } else {
-        blog_url.innerHTML = data.blog;
+        blog_url.innerHTML = `${data.blog.slice(0, 13)}... `;
         blog_url.href = `${data.blog}`;
       }
     })
