@@ -145,6 +145,10 @@ p {
   font-weight: var(--font-weight-light);
   letter-spacing: 2px;
 }
+.nav.error {
+  border: 1.5px solid var(--Bright_Red);
+  box-shadow: 0px 0px 2px 4px rgba(246, 70, 70, 0.25);
+}
 .nav .search-btn:hover {
   opacity: 0.8;
 }
