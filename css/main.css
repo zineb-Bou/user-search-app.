@@ -26,8 +26,9 @@ p {
 .header {
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 50vw;
   margin-top: 24px;
+  margin-bottom: 12px;
 }
 .header .heading {
   display: flex;
@@ -94,7 +95,8 @@ p {
   position: relative;
   height: 69px;
   border-radius: 15px;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
 }
 .nav .search-icon {
   margin-left: 24px;
@@ -103,10 +105,11 @@ p {
 }
 
 .no-results-tag {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: var(--font-weight-bold);
   color: var(--Bright_Red);
   visibility: hidden;
+  padding-left: 16px;
 }
 .no-results-tag.make_it_visible {
   visibility: visible;
@@ -141,8 +144,8 @@ p {
   background-color: var(--Sky_Blue);
   color: var(--White);
   border-radius: 10px;
-  font-size: 16px;
-  font-weight: var(--font-weight-light);
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
   letter-spacing: 2px;
 }
 .nav.error {
@@ -150,14 +153,14 @@ p {
   box-shadow: 0px 0px 2px 4px rgba(246, 70, 70, 0.25);
 }
 .nav .search-btn:hover {
-  opacity: 0.8;
+  background-color: #5ca5f8;
 }
 .nav .search-btn:focus {
   outline: none;
 }
 /* Style the main section  */
 .main {
-  width: 60vw;
+  width: 50vw;
   display: grid;
   grid-row-gap: 24px;
   border-radius: 15px;
@@ -167,13 +170,13 @@ p {
 }
 /* Style the pofile image (main left section) */
 .profile-img {
-  margin-top: 32px;
-  margin-left: 32px;
-  margin-bottom: 32px;
+  margin: 32px;
   display: flex;
   justify-content: center;
   grid-column: 1/2;
   grid-row: 1/5;
+  width: 110px;
+  height: 110px;
 }
 .profile-img img {
   border-radius: 100%;
@@ -280,6 +283,9 @@ p {
   align-self: end;
 }
 
+.social-contact div > a {
+  margin-left: 8px;
+}
 .social-contact div > a:hover {
   text-decoration: none;
 }
@@ -308,9 +314,11 @@ p {
   }
   .main {
     width: 60vw;
+    grid-template-columns: 1fr 2fr;
   }
 
   .profile-img {
+    margin: 32px 16px 0 24px;
     grid-row: 1/2;
   }
   .user-name-join-date {
@@ -331,14 +339,20 @@ p {
   .profile-data {
     grid-column: 1/3;
   }
+  .profile-data .column {
+    align-items: center;
+  }
   .social-contact {
     grid-column: 1/3;
+  }
+  .social-contact #blog-url {
+    overflow: hidden;
   }
 }
 
 /* Media queries for screens width < 700px */
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .header {
     width: 90vw;
   }
@@ -359,7 +373,20 @@ p {
     margin-right: 4px;
     font-size: 14px;
   }
+  .profile-img {
+    margin-left: 16px;
+  }
+  .user-description {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .profile-data {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
   .social-contact {
+    margin-left: 16px;
+    margin-right: 16px;
     grid-template-columns: repeat(1, 1fr);
   }
 }
