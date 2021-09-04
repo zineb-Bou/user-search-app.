@@ -125,8 +125,12 @@ form.addEventListener('submit', function (e) {
 
       // Social links section
 
+      if (data.location == '') {
+        loc.innerHTML = 'Not aviable.';
+      } else {
       loc.innerHTML = data.location;
-
+      }
+      //twitter link
       if (data.twitter_username == null) {
         twitter_user_name.innerHTML = 'Not aviable.';
       } else {
