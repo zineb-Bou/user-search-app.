@@ -76,6 +76,7 @@ form.addEventListener('submit', function (e) {
       }
     })
     .then((data) => {
+      console.log(data);
       //remove the invisibility from main if the previous request was error
       main.classList.remove('make_it_invisible');
       //make the no_result tag invisible if the previous request was error
@@ -125,7 +126,7 @@ form.addEventListener('submit', function (e) {
 
       // Social links section
 
-      if (data.location == '') {
+      if (data.location == null) {
         loc.innerHTML = 'Not aviable.';
       } else {
         loc.innerHTML = data.location;
@@ -145,7 +146,7 @@ form.addEventListener('submit', function (e) {
         company.innerHTML = data.company;
       }
 
-      // website url (slice the link display only 10 char for UI purpore) 
+      // website url (slice the link display only 10 char for UI purpore)
       if (data.blog == '') {
         blog_url.innerHTML = 'Not aviable.';
       } else {
