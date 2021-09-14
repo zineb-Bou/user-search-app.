@@ -183,11 +183,15 @@ function convert_month_to_letters(month) {
 
 //function that make the no_result tag visible
 //and hide the main section
-//it for the display purpose
+// made for the display purpose
 // to improve the user experience
 function display_noResult() {
   console.log(no_results.innerHTML);
   no_results.classList.add('make_it_visible');
   main.classList.add('make_it_invisible');
   myForm.classList.add('error');
+}
+
+if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
+  console.log('🎉 Dark mode is supported');
 }
