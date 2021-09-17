@@ -122,12 +122,14 @@ form.addEventListener('submit', function (e) {
 
       if (data.location == null) {
         loc.innerHTML = 'Not aviable.';
+        loc.style.opacity = '0.5';
       } else {
         loc.innerHTML = data.location;
       }
       //twitter link
       if (data.twitter_username == null) {
         twitter_user_name.innerHTML = 'Not aviable.';
+        twitter_user_name.style.opacity = '0.5';
       } else {
         twitter_user_name.innerHTML = data.twitter_username;
         twitter_user_name.href = `https://twitter.com/${data.twitter_username}`;
@@ -136,6 +138,7 @@ form.addEventListener('submit', function (e) {
       // company working at
       if (data.company == null) {
         company.innerHTML = 'Not aviable.';
+        company.style.opacity = '0.5';
       } else {
         company.innerHTML = data.company;
       }
@@ -143,6 +146,7 @@ form.addEventListener('submit', function (e) {
       // website url (slice the link display only 10 char for UI purpore)
       if (data.blog == '') {
         blog_url.innerHTML = 'Not aviable.';
+        blog_url.style.opacity = '0.5';
       } else {
         blog_url.innerHTML = `${data.blog.slice(0, 13)}... `;
         blog_url.href = `${data.blog}`;
