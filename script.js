@@ -184,9 +184,6 @@ function convert_month_to_letters(month) {
 }
 
 //function that make the no_result tag visible
-//and hide the main section
-// made for the display purpose
-// to improve the user experience
 function display_noResult() {
   no_results.classList.add('make_it_visible');
   myForm.classList.add('error');
