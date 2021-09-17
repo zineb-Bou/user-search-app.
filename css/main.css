@@ -450,3 +450,18 @@ p {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* add some preferance color scheme using media query */
+@media (prefers-color-scheme: dark) {
+  body.dark_theme {
+    /* Dark Theme */
+    /* (BG ) */
+    --BG: hsl(220, 40%, 13%);
+    /* (Card BG) */
+    --Card_BG: hsl(222, 41%, 20%);
+    /* Text */
+    --Text_Darker: hsl(0, 0%, 100%);
+    --Text_Dark: hsl(0, 0%, 90%);
+    --Text_Light: hsl(0, 0%, 100%, 80%);
+  }
+}
