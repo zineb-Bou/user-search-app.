@@ -89,9 +89,14 @@ p {
 }
 
 /* style toggle switch button  */
-
-.heading .toggle_switch_btn {
+.theme_btn {
+  min-width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
   text-transform: uppercase;
+  border: none;
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: var(--font-weight-bold);
@@ -99,29 +104,10 @@ p {
   color: var(--Text_Light);
   fill: var(--Text_Light);
   position: absolute;
-  top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
-  visibility: hidden;
+  top: 0;
 }
-#sun:focus {
-  outline: none;
-}
-#moon:focus {
-  outline: none;
-}
-
-.toggle_switch_btn #input_switch {
-  display: none;
-}
-
-/* switch icons when transiting between themes  */
-#input_switch:checked + .icon #sun {
-  visibility: visible;
-}
-
-#input_switch:checked + .icon #moon {
+.light_btn {
   visibility: hidden;
 }
 
