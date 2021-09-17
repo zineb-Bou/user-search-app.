@@ -79,6 +79,7 @@ p {
   margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .heading .title {
   font-size: 24px;
@@ -112,7 +113,6 @@ p {
 }
 
 /* Style the search bar  */
-
 .header .nav {
   display: flex;
   flex-direction: row;
@@ -126,17 +126,23 @@ p {
   background-color: var(--Card_BG);
 }
 .nav .search-icon {
+  max-height: 24px;
+  max-width: 25px;
+  min-height: 24px;
+  min-width: 25px;
   margin-left: 24px;
   margin-right: 8px;
   fill: var(--Sky_Blue);
 }
 
 .no-results-tag {
+  display: inline-block;
   font-size: 14px;
   font-weight: var(--font-weight-bold);
   color: var(--Bright_Red);
   visibility: hidden;
-  padding-left: 16px;
+  margin-right: 8px;
+  min-width: 110px;
 }
 .no-results-tag.make_it_visible {
   visibility: visible;
@@ -154,6 +160,7 @@ p {
   color: var(--Text_Light);
 }
 #myForm #search-input::placeholder {
+  font-weight: 18px;
   color: var(--Text_Light);
 }
 
@@ -167,14 +174,12 @@ p {
 
 /* Style the search btn */
 .nav .search-btn {
-  position: absolute;
-  right: 0px;
   margin-right: 24px;
   border: none;
   height: 50px;
   width: 106px;
   background-color: var(--Sky_Blue);
-  color: var(--White);
+  color: #fff;
   border-radius: 10px;
   font-size: 14px;
   font-weight: var(--font-weight-bold);
@@ -360,6 +365,9 @@ p {
   }
   .main {
     width: 60vw;
+  }
+  #myForm #search-input {
+    font-size: 16px;
   }
 
   .profile-img {
