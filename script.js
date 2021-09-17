@@ -1,26 +1,21 @@
 // Variables
-const theme = document.querySelector('#theme-link');
-const input = document.querySelector('#input_switch');
-const icon = document.querySelector('.icon-name');
+var dark_btn = document.querySelector('.dark_btn');
+var light_btn = document.querySelector('.light_btn');
 
-// When clicking on the toggle switch btn
-input.addEventListener('change', function () {
-  // if the current theme is light theme.
-  if (theme.getAttribute('href') == 'css/Light_theme.css') {
-    theme.href = 'css/Dark_theme.css';
-    // change the inner text to -light-
-    icon.textContent = 'Light';
+dark_btn.addEventListener('click', function () {
+  document.body.classList.add('dark_theme');
+  dark_btn.style.visibility = 'hidden';
+  light_btn.style.visibility = 'visible';
     // Add bg_transition class to the body to implement transition when switching between themes
     document.body.classList.add('bg_transition');
-  } else {
-    theme.href = 'css/Light_theme.css';
-    // change the inner text to -Dark-
-    icon.textContent = 'Dark';
-    // Add bg_transition class to the body to implement transition when switching between themes
-    document.body.classList.add('bg_transition');
-  }
 });
-
+light_btn.addEventListener('click', function () {
+  document.body.classList.remove('dark_theme');
+  light_btn.style.visibility = 'hidden';
+  dark_btn.style.visibility = 'visible';
+    // Add bg_transition class to the body to implement transition when switching between themes
+    document.body.classList.add('bg_transition');
+});
 // variables for the user search
 
 const form = document.getElementById('myForm');
