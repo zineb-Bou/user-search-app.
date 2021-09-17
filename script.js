@@ -6,15 +6,15 @@ dark_btn.addEventListener('click', function () {
   document.body.classList.add('dark_theme');
   dark_btn.style.visibility = 'hidden';
   light_btn.style.visibility = 'visible';
-    // Add bg_transition class to the body to implement transition when switching between themes
-    document.body.classList.add('bg_transition');
+  // Add bg_transition class to the body to implement transition when switching between themes
+  document.body.classList.add('bg_transition');
 });
 light_btn.addEventListener('click', function () {
   document.body.classList.remove('dark_theme');
   light_btn.style.visibility = 'hidden';
   dark_btn.style.visibility = 'visible';
-    // Add bg_transition class to the body to implement transition when switching between themes
-    document.body.classList.add('bg_transition');
+  // Add bg_transition class to the body to implement transition when switching between themes
+  document.body.classList.add('bg_transition');
 });
 // variables for the user search
 
@@ -23,6 +23,8 @@ const form = document.getElementById('myForm');
 const main = document.querySelector('.main');
 
 let avatar = document.querySelector('#avatar');
+
+let search_btn = document.querySelector('#search_btn');
 
 let name = document.querySelector('#name');
 
@@ -52,6 +54,7 @@ let no_results = document.querySelector('.no-results-tag');
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
+  // handle the state when the user type nothing on the search bar
   let search = document.getElementById('search-input').value;
 
   //remove space from search input value
@@ -148,7 +151,7 @@ form.addEventListener('submit', function (e) {
         blog_url.innerHTML = 'Not aviable.';
         blog_url.style.opacity = '0.5';
       } else {
-        blog_url.innerHTML = `${data.blog.slice(0, 13)}... `;
+        blog_url.innerHTML = `${data.blog.slice(0, 20)}... `;
         blog_url.href = `${data.blog}`;
       }
     })
@@ -185,12 +188,6 @@ function convert_month_to_letters(month) {
 // made for the display purpose
 // to improve the user experience
 function display_noResult() {
-  console.log(no_results.innerHTML);
   no_results.classList.add('make_it_visible');
-  main.classList.add('make_it_invisible');
   myForm.classList.add('error');
-}
-
-if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
-  console.log('🎉 Dark mode is supported');
 }
