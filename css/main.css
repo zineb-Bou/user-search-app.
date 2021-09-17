@@ -1,5 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
+:root {
+  /* color  palette */
+  /* Primary */
+  --Lime_Green: hsl(163, 72%, 41%);
+  --Bright_Red: hsl(0, 91%, 62%);
+  /* Icons & Buttons  */
+  --Sky_Blue: hsl(212, 100%, 50%);
+  /* font weight */
+  --font-weight-bold: 700;
+  --font-weight-light: 400;
+  /* Light Theme */
+  /* (BG ) */
+  --BG: hsl(227, 100%, 98%);
+  /* (Card BG) */
+  --Card_BG: hsl(0, 0%, 100%);
+  /* Text */
+  --Text_Dark: hsl(217, 35%, 45%);
+  --Text_Light: hsl(217, 20%, 51%);
+  --Text_Darker: hsl(217, 21%, 21%);
+}
+
+.dark_theme {
+  /* Dark Theme */
+  /* (BG ) */
+  --BG: hsl(220, 40%, 13%);
+  /* (Card BG) */
+  --Card_BG: hsl(222, 41%, 20%);
+  /* Text */
+  --Text_Darker: hsl(0, 0%, 100%);
+  --Text_Dark: hsl(0, 0%, 90%);
+  --Text_Light: hsl(0, 0%, 100%, 80%);
+}
+
 /* to prevent the page shaking issue */
 html {
   overflow-y: scroll;
@@ -14,6 +47,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* color */
+  background-color: var(--BG);
 }
 
 /* Adding transitioin to body when switching between themes  */
@@ -49,6 +84,8 @@ p {
   font-size: 24px;
   line-height: 38px;
   font-weight: var(--font-weight-bold);
+  /* color */
+  color: var(--Text_Darker);
 }
 
 /* style toggle switch button  */
@@ -58,11 +95,9 @@ p {
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: var(--font-weight-bold);
-}
-.toggle_switch_btn .icon {
-  position: relative;
-}
-#sun {
+  /* colors  */
+  color: var(--Text_Light);
+  fill: var(--Text_Light);
   position: absolute;
   top: 0;
   left: 0;
@@ -101,6 +136,8 @@ p {
   border-radius: 15px;
   margin-bottom: 8px;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  /* color  */
+  background-color: var(--Card_BG);
 }
 .nav .search-icon {
   margin-left: 24px;
@@ -127,6 +164,11 @@ p {
   font-size: 20px;
   line-height: 25px;
   font-weight: var(--font-weight-light);
+  /* color */
+  color: var(--Text_Light);
+}
+#myForm #search-input::placeholder {
+  color: var(--Text_Light);
 }
 
 #myForm #search-input:focus {
@@ -170,9 +212,8 @@ p {
   row-gap: 24px;
   border-radius: 15px;
   grid-template-columns: fit-content(110px);
-}
-.main.make_it_invisible {
-  visibility: hidden;
+  /* colors */
+  background-color: var(--Card_BG);
 }
 /* Style the pofile image (main left section) */
 .profile-img {
@@ -206,6 +247,8 @@ p {
   line-height: 33px;
   grid-column: 1/2;
   grid-row: 1/2;
+  /* colors */
+  color: var(--Text_Darker);
 }
 .user-name-join-date #user-name {
   font-size: 16px;
@@ -223,6 +266,8 @@ p {
   grid-row: 1/2;
   text-align: right;
   font-weight: var(--font-weight-light);
+  /* colors */
+  color: var(--Text_Light);
 }
 
 /* second section */
@@ -237,6 +282,8 @@ p {
   font-size: 14px;
   font-weight: var(--font-weight-light);
   line-height: 25px;
+  /* colors */
+  color: var(--Text_Light);
 }
 
 /* third section */
@@ -250,6 +297,8 @@ p {
   grid-row: 3/4;
   margin-right: 32px;
   margin-left: 32px;
+  /* colors */
+  background-color: var(--BG);
 }
 .profile-data .column {
   display: flex;
@@ -259,10 +308,14 @@ p {
   font-size: 13px;
   line-height: 20px;
   font-weight: var(--font-weight-bold);
+  /* colors */
+  color: var(--Text_Light);
 }
 .profile-data .column .number {
   font-size: 22px;
   font-weight: var(--font-weight-bold);
+  /* colors */
+  color: var(--Text_Darker);
 }
 
 /* Bottom section */
@@ -283,13 +336,21 @@ p {
   font-size: 12px;
   line-height: 25px;
   font-weight: var(--font-weight-light);
+  /* colors */
+  fill: var(--Text_Light);
 }
-
+.social-contact > div:hover {
+  fill: var(--Text_Darker);
+}
 .social-contact div > a {
   margin-left: 8px;
+  /* colors */
+  color: var(--Text_Light);
 }
 .social-contact div > a:hover {
   text-decoration: none;
+  /* colors */
+  fill: var(--Text_Darker);
 }
 .social-contact #company {
   text-decoration: none;
