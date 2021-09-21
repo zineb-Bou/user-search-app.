@@ -16,8 +16,7 @@ light_btn.addEventListener('click', function () {
   // Add bg_transition class to the body to implement transition when switching between themes
   document.body.classList.add('bg_transition');
 });
-// variables for the user search
-
+// variables
 const form = document.getElementById('myForm');
 
 const main = document.querySelector('.main');
@@ -50,18 +49,14 @@ let company = document.querySelector('#company');
 
 let no_results = document.querySelector('.no-results-tag');
 
-//handle the event lisntener when submiting the search
+//Handle the event lisntener when submiting the search
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  // handle the state when the user type nothing on the search bar
   let search = document.getElementById('search-input').value;
-
   //remove space from search input value
   let originalName = search.split(' ').join('');
-
   // ...send the form data and get a response asynchronously
-
   fetch('https://api.github.com/users/' + originalName)
     .then((result) => {
       if (result.ok) {
@@ -74,17 +69,14 @@ form.addEventListener('submit', function (e) {
       }
     })
     .then((data) => {
-      //remove the invisibility from main if the previous request was error
-      main.classList.remove('make_it_invisible');
       //make the no_result tag invisible if the previous request was error
       no_results.classList.remove('make_it_visible');
-      //make the input field red
+      //Remove the erro styling if the previous request was error
       myForm.classList.remove('error');
       //fetch all the user data into data variable .
       avatar.src = data.avatar_url;
 
       //user full name
-
       if (data.name == null) {
         name.innerHTML = `I am anonymous 😕`;
       } else {
@@ -108,13 +100,11 @@ form.addEventListener('submit', function (e) {
       join_date.innerHTML = `Joined ${year} ${month} ${day}`;
 
       // bio section
-
       if (data.bio == null) {
         bio.innerHTML = `Oooops !! I didn't add a bio yet. `;
       } else bio.innerHTML = data.bio;
 
       // Profile data section
-
       nbr_repo.innerHTML = data.public_repos;
 
       nbr_followers.innerHTML = data.followers;
@@ -122,7 +112,6 @@ form.addEventListener('submit', function (e) {
       nbr_following.innerHTML = data.following;
 
       // Social links section
-
       if (data.location == null) {
         loc.innerHTML = 'Not aviable.';
         loc.style.opacity = '0.5';

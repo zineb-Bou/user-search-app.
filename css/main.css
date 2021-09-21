@@ -21,6 +21,7 @@
   --Text_Darker: hsl(217, 21%, 21%);
 }
 
+/* Set dark theme class */
 .dark_theme {
   /* Dark Theme */
   /* (BG ) */
@@ -167,7 +168,7 @@ p {
 #myForm #search-input:focus {
   outline: none;
 }
-/* Removing input background colour for Chrome autocomplete? */
+/* Removing input background colour for Chrome autocomplete */
 #myForm #search-input:-webkit-autofill {
   -webkit-background-clip: text;
 }
@@ -357,7 +358,7 @@ p {
   pointer-events: none;
 }
 
-/* Media queries for screens width < 1100px */
+/* Set layout width  for small screens */
 
 @media (max-width: 1100px) {
   .header {
@@ -404,8 +405,6 @@ p {
   }
 }
 
-/* Media queries for screens width < 700px */
-
 @media (max-width: 700px) {
   .header {
     width: 90vw;
@@ -445,7 +444,7 @@ p {
   }
 }
 
-/* add some preferance color scheme using media query */
+/* Add  preferance color scheme using media query */
 @media (prefers-color-scheme: dark) {
   body {
     /* Dark Theme */
