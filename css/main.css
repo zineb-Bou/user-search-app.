@@ -447,7 +447,7 @@ p {
 
 /* add some preferance color scheme using media query */
 @media (prefers-color-scheme: dark) {
-  body.dark_theme {
+  body {
     /* Dark Theme */
     /* (BG ) */
     --BG: hsl(220, 40%, 13%);
