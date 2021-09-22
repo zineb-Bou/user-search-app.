@@ -10,6 +10,9 @@
   /* font weight */
   --font-weight-bold: 700;
   --font-weight-light: 400;
+}
+
+body.light_theme {
   /* Light Theme */
   /* (BG ) */
   --BG: hsl(227, 100%, 98%);
@@ -108,8 +111,6 @@ p {
   position: absolute;
   right: 0;
   top: 0;
-}
-.light_btn {
   visibility: hidden;
 }
 
@@ -456,5 +457,24 @@ p {
     --Text_Darker: hsl(0, 0%, 100%);
     --Text_Dark: hsl(0, 0%, 90%);
     --Text_Light: hsl(0, 0%, 100%, 80%);
+  }
+  .light_btn {
+    visibility: visible;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    /* Light Theme */
+    /* (BG ) */
+    --BG: hsl(227, 100%, 98%);
+    /* (Card BG) */
+    --Card_BG: hsl(0, 0%, 100%);
+    /* Text */
+    --Text_Dark: hsl(217, 35%, 45%);
+    --Text_Light: hsl(217, 20%, 51%);
+    --Text_Darker: hsl(217, 21%, 21%);
+  }
+  .dark_btn {
+    visibility: visible;
   }
 }

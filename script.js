@@ -3,6 +3,7 @@ var dark_btn = document.querySelector('.dark_btn');
 var light_btn = document.querySelector('.light_btn');
 
 dark_btn.addEventListener('click', function () {
+  document.body.classList.remove('light_theme');
   document.body.classList.add('dark_theme');
   dark_btn.style.visibility = 'hidden';
   light_btn.style.visibility = 'visible';
@@ -11,6 +12,7 @@ dark_btn.addEventListener('click', function () {
 });
 light_btn.addEventListener('click', function () {
   document.body.classList.remove('dark_theme');
+  document.body.classList.add('light_theme');
   light_btn.style.visibility = 'hidden';
   dark_btn.style.visibility = 'visible';
   // Add bg_transition class to the body to implement transition when switching between themes
